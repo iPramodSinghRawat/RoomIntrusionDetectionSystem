@@ -7,10 +7,10 @@ import asyncio
 from pyfcm import FCMNotification
 
 config = {
-"apiKey": "AIzaSyDJ79jU74MGbZ-563Px1po0GXUXr6Qqr6Q",
-"authDomain": "aurids-alpha1.firebaseapp.com",
-"databaseURL": "https://aurids-alpha1.firebaseio.com",
-"storageBucket": "aurids-alpha1.appspot.com",
+"apiKey": "project-apikey",
+"authDomain": "project.firebaseapp.com",
+"databaseURL": "https://project.firebaseio.com",
+"storageBucket": "project.appspot.com",
 "serviceAccount": "firebase-adminsdk-serviceaccounts.json"
 }
 
@@ -68,10 +68,10 @@ def upload_notification_2_firebase_v2(face_file,face_frame_file,notification,not
 def push_notification_via_firebase(last_push_key,message_title,message_body):
 
     #api_key=server_key
-    push_service = FCMNotification(api_key="AAAAoHcx9cg:APA91bFN1Rygh0nAKJ5irk5DgGr-lN_dTtn-SjJrdmLRuZSJg6WvI5rzt892kWM9LDWUOGJBO08OFMtMN2AjBz9b_GqLE0ogOjlQCIfsDIViLzM7GSliru2pX2vmO1avupSmASIvFb7K")
+    push_service = FCMNotification(api_key="from-firebase-acount")
 
     #id of device to send push notifications
-    registration_id = "eQlSS4m7ys0:APA91bHmxAqtt_cV4uO0XA2u3EOzKvABp66OKKl8-3bR-fPHsBcJLBWTZU8Ww1A0si3bb0ySalvvsnIWjCgHfpFhwoQgt5v711uGwzn5YNivRUnFN_Vhau6LTgzuXd8EoXQVpzI6qyV8"
+    registration_id = "put-your-android-device-id"
 
     # Sending a notification with data message payload
     data_message = {
